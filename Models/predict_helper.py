@@ -33,6 +33,7 @@ def prepare_input(age, income, loan_amount, loan_tenure_months, avg_dpd_per_deli
         'loan_purpose_Personal': 1 if loan_purpose == 'Personal' else 0,
         'loan_type_Unsecured': 1 if loan_type == 'Unsecured' else 0,
         # additional dummy fields just for scaling purpose
+        'employment_status_Self-Employed': 0 ,
         'number_of_dependants': 1,  # Dummy value
         'years_at_current_address': 1,  # Dummy value
         'zipcode': 1,  # Dummy value
